@@ -11,7 +11,7 @@ export default class Facebookscreen extends Component {
                 <View style={styles.container}>
                     <View style={{flexDirection: "row"}}>
                         <Text>English </Text>
-                        <Text> 英语 </Text>
+                        <Text> 英语(英語) </Text>
                         <TouchableOpacity>
                             <Text style={{ color: "blue" }}> Thêm...</Text>
                         </TouchableOpacity>
@@ -26,7 +26,9 @@ export default class Facebookscreen extends Component {
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <Text style={{color:"blue",fontWeight:"bold",marginTop:8}}>Quên mật khẩu?</Text>
+                        <TouchableOpacity>
+                           <Text style={{color:"blue",fontWeight:"bold",marginTop:8}}>Quên mật khẩu?</Text>
+                        </TouchableOpacity>                  
                     </View>
                     <View style={{marginTop:80}}>
                         <Text style={{color:"gray"}}>──────────── Hoặc ────────────</Text>
@@ -71,7 +73,7 @@ const styles = StyleSheet.create({
     },
     signup :{
         borderRadius:4,
-        marginTop:16,
+        marginTop:64,
         justifyContent:"center",
         alignItems:"center",
         height:40,
