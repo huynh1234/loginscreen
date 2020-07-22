@@ -5,7 +5,7 @@ export default class Facebookscreen extends Component {
     render() {
         return (
             <View >
-                <View>
+                <View   >
                     <Image style={styles.Image} source={require('../image/fb.jpg')} />
                 </View>
                 <View style={styles.container}>
@@ -18,7 +18,11 @@ export default class Facebookscreen extends Component {
                     </View>
                     <View style={{marginTop:64}}>
                         <TextInput style={styles.input}  placeholder="Số điện thoại hoặc Email" />
-                        <TextInput style={styles.input} placeholder="Mật khẩu"/>
+                        <TextInput style={styles.input}
+                            placeholder="Mật khẩu" 
+                            returnKeyType='go'
+                            secureTextEntry
+                            autoCorrect={false}/>
                     </View>
                     <View>
                         <TouchableOpacity style={styles.signin}>
@@ -31,7 +35,7 @@ export default class Facebookscreen extends Component {
                         </TouchableOpacity>                  
                     </View>
                     <View style={{marginTop:80}}>
-                        <Text style={{color:"gray"}}>──────────── Hoặc ────────────</Text>
+                        <Text style={{color:"gray"}}>───────── Hoặc ───────── </Text>
                     </View>
                     <View style={{marginTop:32}}>
                         <TouchableOpacity style={styles.signup} >
@@ -48,7 +52,7 @@ export default class Facebookscreen extends Component {
 const styles = StyleSheet.create({
     container: {
         alignItems:'center',
-        marginTop:8
+        marginTop:8,
     },
     Image: {
         width: "100%",
@@ -73,7 +77,7 @@ const styles = StyleSheet.create({
     },
     signup :{
         borderRadius:4,
-        marginTop:64,
+        marginBottom:4,
         justifyContent:"center",
         alignItems:"center",
         height:40,
