@@ -1,25 +1,19 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text, Image, TouchableOpacity, TextInput } from 'react-native'
+import { View, StyleSheet, Text, Image, TouchableOpacity, TextInput, StatusBar } from 'react-native'
 
-export default class Facebookscreen extends Component {
-    render() {
-        return (
-            <View >
-                <View   >
-                    <Image style={styles.Image} source={require('../image/fb.jpg')} />
+
+export default function Facebookscreen() {
+    return (
+        <View >
+                <StatusBar style="light"/>
+                <View >
+                    <Image style={styles.Image} source={require('../assets/fb1.png')} />
                 </View>
                 <View style={styles.container}>
-                    <View style={{flexDirection: "row"}}>
-                        <Text>English </Text>
-                        <Text> 英语(英語) </Text>
-                        <TouchableOpacity>
-                            <Text style={{ color: "blue" }}> Thêm...</Text>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={{marginTop:64}}>
-                        <TextInput style={styles.input}  placeholder="Số điện thoại hoặc Email" />
-                        <TextInput style={styles.input}
-                            placeholder="Mật khẩu" 
+                    <View style={styles.input1}>
+                        <TextInput style={styles.input}  placeholder=" Số điện thoại hoặc Email" />
+                        <TextInput style={styles.input2}
+                            placeholder=" Mật khẩu" 
                             returnKeyType='go'
                             secureTextEntry
                             autoCorrect={false}/>
@@ -28,27 +22,33 @@ export default class Facebookscreen extends Component {
                         <TouchableOpacity style={styles.signin}>
                             <Text style={{color:"#fff",fontWeight:"bold"}}>Đăng nhập </Text>
                         </TouchableOpacity>
+                        
                     </View>
                     <View>
                         <TouchableOpacity>
                            <Text style={{color:"blue",fontWeight:"bold",marginTop:8}}>Quên mật khẩu?</Text>
+                        </TouchableOpacity>            
+                        <TouchableOpacity>
+                           <Text style={{color:"blue",fontWeight:"bold",marginTop:8,textAlign:"center"}}>Quay lại  </Text>
                         </TouchableOpacity>                  
                     </View>
-                    <View style={{marginTop:80}}>
-                        <Text style={{color:"gray"}}>───────── Hoặc ───────── </Text>
+                    <View style={{marginTop:120,marginBottom:32,flexDirection:"row"}}>
+                        <Text numberOfLines={1} style={{color:"gray"}}> ──────── </Text>
+                        <Text style={{color:"gray"}}> HOẶC </Text>
+                        <Text numberOfLines={1} style={{color:"gray"}}> ──────── </Text>
                     </View>
-                    <View style={{marginTop:32}}>
+                    <View style={{marginBottom:16}}>
                         <TouchableOpacity style={styles.signup} >
-                            <Text style={{fontWeight:"bold",color:"#fff"}}>
-                                Tạo tài khoản facebook mới 
+                            <Text style={{color:"blue"}}>
+                                Tạo tài khoản mới 
                             </Text>
                         </TouchableOpacity>
                     </View>
                 </View>
             </View>
-        )
-    }
+    )
 }
+
 const styles = StyleSheet.create({
     container: {
         alignItems:'center',
@@ -58,10 +58,20 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 220
     },
-    input:{
-        borderBottomColor:"gray",
-        borderBottomWidth: 1,
-        marginTop:8,
+    input1:{
+        borderRadius:4,
+        marginTop:16,
+        borderColor:"gray",
+        borderWidth:1
+    },
+    input:{      
+        width:300,
+        height:40,
+        fontSize:20
+    },
+    input2:{
+        borderTopColor:"gray",
+        borderTopWidth:1,
         width:300,
         height:40,
         fontSize:20
@@ -73,17 +83,14 @@ const styles = StyleSheet.create({
         alignItems:"center",
         height:40,
         width:300,
-        backgroundColor:"blue"
+        backgroundColor:"#045eeb"
     },
     signup :{
         borderRadius:4,
-        marginBottom:4,
         justifyContent:"center",
         alignItems:"center",
         height:40,
         width:300,
-        backgroundColor:"#00b33c"
+        backgroundColor:"#dcedfa"
     }
 });
-
-
