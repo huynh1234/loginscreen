@@ -19,7 +19,6 @@ export default class Momoscreen extends Component {
                             returnKeyType='go'
                             secureTextEntry
                             autoCorrect={false}
-                            maxLength = {8}
                         />
                     </View>
                     <TouchableOpacity style={styles.Buttondangnhap}>
