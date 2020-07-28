@@ -12,22 +12,24 @@ const windowHeight = Dimensions.get('window').height;
 export default function Tus() {
     const renderItem = ({ item }) => (
         <View>
-          <View style={styles.headertus}>
-              <View style={{flexDirection:"row",alignItems:"center"}}>
-                 <Image style={styles.avatar} source={item.authorAvatar} styles={{ width: "100%", height: "100%" }} />
+            <View style={styles.headertus}>
+                <TouchableOpacity style={{ flexDirection: "row", alignItems: "center" }}>
+                    <Image style={styles.avatar} source={item.authorAvatar} styles={{ width: "100%", height: "100%" }} />
 
-                <Text style={styles.text} >{item.authorName}</Text>
-              </View>
-               
+                    <Text style={styles.text} >{item.authorName}</Text>
+                </TouchableOpacity>
 
-                <Entypo name="dots-three-vertical" size={24} color="black" />
+                <TouchableOpacity>
+                    <Entypo name="dots-three-vertical" size={16} color="black" />
+                </TouchableOpacity>
+
             </View>
 
             <Image source={item.image} style={styles.imagestyle} />
 
             <LikeandShare />
 
-            <View style={{flexDirection:"row",marginLeft:16,marginTop:4}}>
+            <View style={{ flexDirection: "row", marginLeft: 16, marginTop: 4 }}>
                 {/* <Text> Có Quanghieus và {item.viewCount}  người thích</Text> */}
                 <Text>Có </Text>
                 <Text style={styles.text}>Quanghieus </Text>
@@ -35,28 +37,28 @@ export default function Tus() {
                 <Text style={styles.text}>{item.viewCount} người khác </Text>
                 <Text>thích</Text>
             </View>
-            <View style={{flexDirection:"row",marginLeft:16,marginTop:4,width:"100%"}}>
+            <View style={{ flexDirection: "row", marginLeft: 16, marginTop: 4, width: "100%" }}>
                 {/* <Text> Có Quanghieus và {item.viewCount}  người thích</Text> */}
                 <Text style={styles.text} >{item.authorName} <Text>{item.tus}</Text></Text>
-                
+
             </View>
             <TouchableOpacity>
-                <Text style={{color:"gray",marginLeft:16}}>Xem tất cả 9 bình luận </Text>
+                <Text style={{ color: "gray", marginLeft: 16 }}>Xem tất cả 9 bình luận </Text>
             </TouchableOpacity>
         </View>
     );
 
     return (
         <View>
-            
-            <FlatList
-            data={DATA}
-            renderItem={renderItem}
-            keyExtractor={item => item.id}
 
-        />
+            <FlatList
+                data={DATA}
+                renderItem={renderItem}
+                keyExtractor={item => item.id}
+                showsVerticalScrollIndicator={false}
+            />
         </View>
-        
+
     )
 
 }
@@ -67,8 +69,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        marginTop:16
-
+        marginTop: 16,
+        paddingHorizontal:16
     },
     text: {
         fontWeight: "bold",
@@ -80,10 +82,10 @@ const styles = StyleSheet.create({
         borderColor: "gray",
         borderRadius: 18,
         overflow: "hidden",
-        margin: 8
+       marginRight:4
     },
     imagestyle: {
         width: windowWidth,
-        height: (windowWidth * 460) / 750,
+        height: (windowWidth * 460) / 450,
     },
 })
