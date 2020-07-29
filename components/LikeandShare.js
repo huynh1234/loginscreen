@@ -17,9 +17,9 @@ export default function LikeandShare() {
                     <Feather name="send" size={28} color="black" style={styles.icon} />
                 </TouchableOpacity>
             </View>
-            <View>
+            <TouchableOpacity>
                 <Feather name="bookmark" size={28} color="black" style={styles.icon} />
-            </View>
+            </TouchableOpacity>
 
 
         </View>
