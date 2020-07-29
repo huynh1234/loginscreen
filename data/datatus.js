@@ -10,7 +10,7 @@ export const DATA = [
         image: require("../image/newfeed7.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
-        viewCount: 100234
+        viewCount: 354987
     },
     {
         id: "2",
