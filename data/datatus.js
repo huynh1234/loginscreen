@@ -14,7 +14,7 @@ export const DATA = [
     },
     {
         id: "2",
-        authorAvatar: require("../image/newfeed3.jpg"),
+        authorAvatar: require("../image/newfeed2.jpg"),
         authorName: "Quỳnh Trang",
         image: require("../image/newfeed1.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
@@ -23,7 +23,7 @@ export const DATA = [
     },
     {
         id: "3",
-        authorAvatar: require("../image/newfeed2.jpg"),
+        authorAvatar: require("../image/newfeed3.jpg"),
         authorName: "Hồng Quyên",
         image: require("../image/newfeed2.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
@@ -32,54 +32,54 @@ export const DATA = [
     },
     {
         id: "4",
-        authorAvatar: require("../image/newfeed3.jpg"),
+        authorAvatar: require("../image/newfeed4.jpg"),
         authorName: "Quỳnh Trang",
-        image: require("../image/newfeed3.jpg"),
+        image: require("../image/newfeed11.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
         viewCount: 136575
     },
     {
-        id: "5",
+        id: "4",
         authorAvatar: require("../image/newfeed4.jpg"),
-        authorName: "Quang Trung",
-        image: require("../image/newfeed4.jpg"),
+        authorName: "Quỳnh Trang",
+        image: require("../image/newfeed7.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
-        viewCount: 456982
+        viewCount: 136575
     },
     {
         id: "6",
-        authorAvatar: require("../image/fb.jpg"),
+        authorAvatar: require("../image/newfeed6.jpg"),
         authorName: "Ngọc Bích",
-        image: require("../image/fb.jpg"),
+        image: require("../image/newfeed9.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
         viewCount: 674582
     },
     {
         id: "7",
-        authorAvatar: require("../image/newfeed2.jpg"),
+        authorAvatar: require("../image/newfeed7.jpg"),
         authorName: "Hồng Quyên",
-        image: require("../image/newfeed2.jpg"),
+        image: require("../image/newfeed10.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
         viewCount: 576278
     },
     {
         id: "8",
-        authorAvatar: require("../image/newfeed3.jpg"),
+        authorAvatar: require("../image/newfeed8.jpg"),
         authorName: "Quỳnh Trang",
-        image: require("../image/newfeed3.jpg"),
+        image: require("../image/newfeed11.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
         viewCount: 136575
     },
     {
         id: "9",
-        authorAvatar: require("../image/fb.jpg"),
+        authorAvatar: require("../image/newfeed9.jpg"),
         authorName: "Ngọc Bích",
-        image: require("../image/fb.jpg"),
+        image: require("../image/newfeed12.jpg"),
         tus:"Hôm qua trời đẹp lên cao, tôi buồn không hiểu vì sao tôi buồn ",
         isLiked: false,
         viewCount: 674582
