@@ -2,7 +2,7 @@ export const STORIES=[
     {
         id: "1",
         authorAvatar: require("../image/newfeed3.jpg"),
-        authorName: "Đức Huynhhh",
+        authorName: "Đức Huynh",
         isScreen:false
     },
     {
