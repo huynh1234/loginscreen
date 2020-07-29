@@ -12,20 +12,18 @@ export default function Instagram() {
         <View>
             <View style={styles.header} >
                 <TouchableOpacity>
-                 <SimpleLineIcons name="camera" size={28} color="black" />
+                 <SimpleLineIcons name="camera" size={24} color="black" />
                 </TouchableOpacity>
 
-                <Text style={{fontWeight:"bold",fontSize:20}}>Instagram</Text>
+                <Image source= {require('../image/logo.png')} style={styles.logo}/>
 
                 <TouchableOpacity>
-                    <Feather name="send" size={28} color="black" />
+                    <Feather name="send" size={24} color="black" />
                 </TouchableOpacity>
                 
             </View>
                 
-            <SafeAreaView>
-                <Stories/>
-            </SafeAreaView>
+           
 
             <SafeAreaView >
                 <Tus/>
@@ -37,19 +35,24 @@ export default function Instagram() {
 }
 const styles = StyleSheet.create({
     header: {
-        marginTop:16,
+        marginTop:24,
         paddingHorizontal: 16,
         alignItems: "center",
         flexDirection: "row",
         justifyContent: "space-between",
         width: "100%",
-        height: 52,
-        backgroundColor: "#fff",
+        height: 48,
+        backgroundColor: "#f9fafc",
         borderBottomColor:"#ecf0f1",
-        borderBottomWidth:1
+        borderBottomWidth:1,       
+     },
+     logo:{
+         width:80,
+         height:24
+     }
         
 
-    },
+    
     
     
 });
